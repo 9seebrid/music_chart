@@ -14,9 +14,10 @@ from bs4 import BeautifulSoup
 # 기존에는 data/genie.json 한 파일만 덮어썼지만,
 # 이제는 data/genie/2026-03-17_21.json 처럼
 # 시간별 파일을 저장하기 위해 폴더 경로를 사용합니다.
-BASE_DIR = Path("data")
+BASE_DIR = Path(__file__).resolve().parents[2] / "data"
 SITE_NAME = "genie"
 SITE_DIR = BASE_DIR / SITE_NAME
+SITE_DIR.mkdir(parents=True, exist_ok=True)
 
 
 GENIE_HEADERS = {

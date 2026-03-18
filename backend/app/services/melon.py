@@ -13,9 +13,10 @@ from bs4 import BeautifulSoup
 # data/melon 폴더 안에 시간별 JSON 파일을 저장하기 위한 경로입니다.
 # 예:
 # data/melon/2026-03-17_13.json
-BASE_DIR = Path("data")
+BASE_DIR = Path(__file__).resolve().parents[2] / "data"
 SITE_NAME = "melon"
 SITE_DIR = BASE_DIR / SITE_NAME
+SITE_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def fetch_melon_chart(limit: int = 100) -> list[dict]:

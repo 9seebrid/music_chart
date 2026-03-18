@@ -13,9 +13,10 @@ from bs4 import BeautifulSoup
 # ==============================
 # 기존 data/bugs.json 단일 파일 대신
 # data/bugs/2026-03-17_21.json 형태로 시간별 저장합니다.
-BASE_DIR = Path("data")
+BASE_DIR = Path(__file__).resolve().parents[2] / "data"
 SITE_NAME = "bugs"
 SITE_DIR = BASE_DIR / SITE_NAME
+SITE_DIR.mkdir(parents=True, exist_ok=True)
 
 
 BUGS_HEADERS = {
