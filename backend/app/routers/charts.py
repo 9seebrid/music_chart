@@ -20,12 +20,6 @@ router = APIRouter(prefix="/api/charts", tags=["charts"])
 # 지원하지 않는 site 값이 들어왔을 때 에러 메시지에 사용합니다.
 SUPPORTED_SITES = ["melon", "genie", "bugs"]
 
-
-router = APIRouter(prefix="/api/charts", tags=["charts"])
-
-SUPPORTED_SITES = ["melon", "genie", "bugs"]
-
-
 @router.get("")
 def get_chart(
     site: str = Query(
@@ -145,22 +139,55 @@ def compare_charts(
             text = re.sub(r"\s+", " ", text)
             return text
 
-        # 가수명 정리:
-        # - 아이유(IU), 아이유 (IU) -> 아이유
+        # 가수명 정규화 함수
+        #
+        # 역할:
+        # - 사이트마다 가수명이 조금 다르게 들어와도 최대한 같은 가수로 인식
+        #
+        # 예:
+        # "아이유(IU)" -> "아이유"
+        # "아이유 (IU)" -> "아이유"
         def normalize_artist(artist: str) -> str:
-            artist = normalize_text(artist)
+            import unicodedata
+
+            artist = artist.strip().lower()
+            artist = unicodedata.normalize("NFKC", artist)
 
             # 괄호 안 내용 제거
             artist = re.sub(r"\([^)]*\)", "", artist)
 
-            # 제거 후 공백 다시 정리
-            artist = re.sub(r"\s+", " ", artist).strip()
+            # 공백/특수문자 제거 후 한글/영문/숫자만 남김
+            artist = re.sub(r"[^0-9a-z가-힣]", "", artist)
+
             return artist
 
-        # 제목 정리:
-        # 지금은 공백/대소문자만 정리
+        # 제목 정규화 함수
+        #
+        # 역할:
+        # - 사이트마다 제목 표기가 조금 달라도 같은 곡으로 인식하기 위함
+        #
+        # 처리 방식:
+        # 1. 소문자 변환
+        # 2. 앞뒤 공백 제거
+        # 3. 제목 비교에 불필요한 공백/특수문자 제거
+        # 4. 한글/영문/숫자만 남김
+        #
+        # 예:
+        # "0+0"      -> "00"
+        # "0 + 0"    -> "00"
+        # "Love Wins All" -> "lovewinsall"
         def normalize_title(title: str) -> str:
-            title = normalize_text(title)
+            # 기본 정리
+            title = title.strip().lower()
+
+            # 유니코드 정규화
+            # 전각/반각 문자 차이 같은 걸 줄여줌
+            import unicodedata
+            title = unicodedata.normalize("NFKC", title)
+
+            # 한글 / 영문 / 숫자만 남기고 나머지는 제거
+            title = re.sub(r"[^0-9a-z가-힣]", "", title)
+
             return title
 
         # 공통 병합 함수
@@ -192,6 +219,21 @@ def compare_charts(
                 normalized_artist = normalize_artist(artist)
 
                 key = f"{normalized_title}|{normalized_artist}"
+                
+                # # 디버깅용 로그
+                # #
+                # # "0+0" 관련 데이터가 실제로 어떤 key로 만들어지는지 확인
+                # if "0" in title:
+                #     print(
+                #         "[DEBUG]",
+                #         site_name,
+                #         "raw_title=", repr(title),
+                #         "raw_artist=", repr(artist),
+                #         "normalized_title=", repr(normalized_title),
+                #         "normalized_artist=", repr(normalized_artist),
+                #         "key=", repr(key),
+                #         flush=True,
+                #     )
 
                 # 아직 merged에 없는 곡이면 기본 구조 생성
                 if key not in merged:
@@ -215,7 +257,17 @@ def compare_charts(
                         "genie_rank_status": None,
                         "bugs_rank_status": None,
                         
-                        "search_text": f"{title.lower()} {artist.lower()} {normalized_artist.lower()}",
+                        # search_text:
+                        # 프론트에서 사용자가 입력한 검색어와 비교하기 위한 문자열
+                        #
+                        # 원본 제목 + 원본 가수명 + 정규화 가수명 + 정규화 제목을 같이 넣어둡니다.
+                        # 이렇게 하면 "0 + 0" / "0+0" 같은 표기 차이도 검색에 조금 더 유연하게 대응할 수 있습니다.
+                        "search_text": (
+                            f"{title.lower()} "
+                            f"{artist.lower()} "
+                            f"{normalized_artist.lower()} "
+                            f"{normalized_title.lower()}"
+                        ),                        
                     }
 
                 # 사이트별 순위 저장
@@ -223,8 +275,14 @@ def compare_charts(
                 merged[key][f"{site_name}_rank_change"] = item.get("rank_change")
                 merged[key][f"{site_name}_rank_status"] = item.get("rank_status")
                 
-                # 같은 곡이 다른 사이트에서 또 들어올 때,
-                extra_search_text = f" {title.lower()} {artist.lower()} {normalized_artist.lower()}"
+                # 같은 곡이 다른 사이트에서 또 들어왔을 때도
+                # 검색용 문자열에 원본/정규화 정보를 계속 누적
+                extra_search_text = (
+                    f" {title.lower()}"
+                    f" {artist.lower()}"
+                    f" {normalized_artist.lower()}"
+                    f" {normalized_title.lower()}"
+                )
                 # 검색용 문자열에도 원본 가수명/정규화 가수명을 계속 누적합니다.
                 merged[key]["search_text"] += extra_search_text
 

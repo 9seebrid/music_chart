@@ -332,30 +332,79 @@ function App() {
   };
 
   /**
-   * 비교 API 호출 함수
-   * 사용자가 입력한 compareKeyword를 이용해
-   * /api/charts/compare API를 호출합니다.
+   * 비교 검색 API를 호출하는 함수
+   *
+   * 역할:
+   * - 사용자가 입력한 키워드로 /api/charts/compare 호출
+   * - 결과를 compareData 상태에 저장
+   * - 검색어가 비어 있으면 API를 호출하지 않고 결과를 초기화
+   *
+   * 왜 keyword를 매개변수로 받나?
+   * - 버튼 클릭
+   * - 자동 검색(useEffect)
+   * - 엔터 검색
+   * 이런 여러 상황에서 같은 함수를 재사용하기 위해서입니다.
    */
-  const fetchCompare = async () => {
+  const fetchCompare = async (keyword: string) => {
+    /**
+     * 사용자가 공백만 입력했을 수도 있으므로
+     * 앞뒤 공백을 제거한 실제 검색어를 만듭니다.
+     *
+     * 예:
+     * " 아이유 " -> "아이유"
+     * "   " -> ""
+     */
+    const finalKeyword = keyword.trim();
+
+    /**
+     * 검색어가 비어 있으면
+     * - 기존 결과를 지우고
+     * - 에러도 지우고
+     * - API는 호출하지 않고 종료합니다.
+     *
+     * 이 코드가 있어야
+     * "빈칸 엔터 시 전체 결과 출력" 같은 문제가 안 생깁니다.
+     */
+    if (!finalKeyword) {
+      setCompareData(null);
+      setCompareError("");
+      return;
+    }
+
     try {
+      // 로딩 시작
       setCompareLoading(true);
+
+      // 이전 에러 메시지 초기화
       setCompareError("");
 
+      /**
+       * 비교 검색 API 호출
+       * encodeURIComponent를 써서
+       * 한글/공백/특수문자가 들어가도 안전하게 요청합니다.
+       */
       const response = await fetch(
-        `/api/charts/compare?keyword=${encodeURIComponent(compareKeyword)}`,
+        `/api/charts/compare?keyword=${encodeURIComponent(finalKeyword)}`,
       );
 
+      // HTTP 응답이 실패면 에러 처리
       if (!response.ok) {
         throw new Error("비교 데이터를 불러오지 못했습니다.");
       }
 
+      // 정상 응답이면 JSON 파싱 후 상태 저장
       const data: CompareResponse = await response.json();
       setCompareData(data);
     } catch (err) {
       console.error(err);
+
+      // 사용자에게 보여줄 에러 메시지
       setCompareError("비교 조회 중 오류가 발생했습니다.");
+
+      // 실패 시 기존 결과 제거
       setCompareData(null);
     } finally {
+      // 성공/실패와 관계없이 로딩 종료
       setCompareLoading(false);
     }
   };
@@ -367,6 +416,59 @@ function App() {
   useEffect(() => {
     fetchChart(site);
   }, [site]);
+
+  /**
+   * 비교 검색 자동 실행용 useEffect
+   *
+   * 역할:
+   * - compareKeyword가 바뀔 때마다 실행됨
+   * - 입력값이 있으면 잠깐 기다렸다가 자동 검색
+   * - 입력값이 비면 결과를 즉시 초기화
+   *
+   * 왜 setTimeout을 쓰나?
+   * - 글자 하나 입력할 때마다 바로 API를 호출하면 너무 많이 요청될 수 있음
+   * - 그래서 300ms 정도 기다렸다가 사용자가 입력을 멈추면 검색
+   *
+   * 이걸 debounce라고 생각하면 됩니다.
+   */
+  useEffect(() => {
+    /**
+     * 입력값이 완전히 비어 있으면
+     * 비교 결과와 에러 메시지를 즉시 초기화합니다.
+     *
+     * 예:
+     * "아이유" -> 백스페이스로 전부 삭제 -> 결과도 바로 사라짐
+     */
+    if (!compareKeyword.trim()) {
+      setCompareData(null);
+      setCompareError("");
+      return;
+    }
+
+    /**
+     * 사용자가 입력을 멈춘 뒤 300ms 후에 검색 실행
+     *
+     * 예:
+     * "아" -> 바로 호출 안 함
+     * "아이" -> 바로 호출 안 함
+     * "아이유" 입력 후 잠깐 멈춤 -> 그때 검색
+     */
+    const timer = setTimeout(() => {
+      fetchCompare(compareKeyword);
+    }, 300);
+
+    /**
+     * cleanup 함수
+     *
+     * compareKeyword가 다시 바뀌면
+     * 이전에 예약된 검색은 취소합니다.
+     *
+     * 예:
+     * "아" 입력 후 300ms 되기 전에 "아이" 입력하면
+     * "아" 검색은 취소되고 "아이" 기준으로 다시 예약됨
+     */
+    return () => clearTimeout(timer);
+  }, [compareKeyword]);
 
   /**
    * 현재 사이트 차트 목록을
@@ -436,8 +538,8 @@ function App() {
       <header className="page-header">
         <h1 className="page-title">🎵 음악 차트 비교 서비스</h1>
         <p className="page-description">
-          국내 주요 음원 사이트의 차트를 통합 조회하고,
-          곡명 및 아티스트 기준으로 순위를 비교·분석할 수 있는 서비스입니다.
+          국내 주요 음원 사이트의 차트를 통합 조회하고, 곡명 및 아티스트
+          기준으로 순위를 비교·분석할 수 있는 서비스입니다.
         </p>
       </header>
 
@@ -564,15 +666,28 @@ function App() {
             type="text"
             placeholder="곡명 또는 가수명을 입력하세요. 예: 아이브"
             value={compareKeyword}
-            onChange={(e) => setCompareKeyword(e.target.value)}
-            onKeyDown={(e) => {
-              if (e.key === "Enter") {
-                fetchCompare();
-              }
+            /**
+             * 입력값이 바뀔 때마다 compareKeyword 상태를 갱신합니다.
+             *
+             * 이 자체는 검색을 직접 실행하지 않습니다.
+             * 대신 아래 useEffect가 compareKeyword 변화를 감지해서 자동 검색합니다.
+             */
+            onChange={(e) => {
+              setCompareKeyword(e.target.value);
             }}
           />
 
-          <button className="compare-search-button" onClick={fetchCompare}>
+          <button
+            className="compare-search-button"
+            /**
+             * 자동 검색이 이미 되더라도
+             * 버튼을 눌렀을 때 현재 입력값으로 한 번 더 검색할 수 있게 합니다.
+             *
+             * 사실 자동 검색이 있다면 없어도 되지만,
+             * 사용자 입장에서는 버튼이 있으면 익숙해서 남겨두는 경우도 많습니다.
+             */
+            onClick={() => fetchCompare(compareKeyword)}
+          >
             비교 검색
           </button>
         </div>
