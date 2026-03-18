@@ -436,8 +436,8 @@ function App() {
       <header className="page-header">
         <h1 className="page-title">🎵 음악 차트 비교 서비스</h1>
         <p className="page-description">
-          FastAPI 백엔드에서 차트 데이터를 받아와 사이트별로 조회하고,
-          곡명/가수명 기준으로 순위를 비교합니다.
+          국내 주요 음원 사이트의 차트를 통합 조회하고,
+          곡명 및 아티스트 기준으로 순위를 비교·분석할 수 있는 서비스입니다.
         </p>
       </header>
 
