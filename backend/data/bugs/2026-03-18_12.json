@@ -1,0 +1,706 @@
+{
+  "site": "bugs",
+  "count": 100,
+  "items": [
+    {
+      "rank": 1,
+      "title": "BANG BANG",
+      "artist": "IVE (아이브)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41402/4140258.jpg?version=20260228020256",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 2,
+      "title": "RUDE!",
+      "artist": "Hearts2Hearts (하츠투하츠)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41410/4141087.jpg?version=20260221004103",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 3,
+      "title": "404 (New Era)",
+      "artist": "KiiiKiii (키키)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41388/4138853.jpg?version=20260310005815",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 4,
+      "title": "Good Goodbye",
+      "artist": "화사 (HWASA)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41305/4130508.jpg?version=20251028010926",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 5,
+      "title": "Drowning",
+      "artist": "WOODZ",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/40839/4083984.jpg?version=20250318143138",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 6,
+      "title": "사랑하게 될 거야",
+      "artist": "한로로",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/205869/20586963.jpg?version=20240904004214",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 7,
+      "title": "BLACKHOLE",
+      "artist": "IVE (아이브)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41402/4140258.jpg?version=20260228020256",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 8,
+      "title": "0+0",
+      "artist": "한로로",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/207447/20744778.jpg?version=20250804122248",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 9,
+      "title": "Golden",
+      "artist": "HUNTR/X",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/381763/38176338.jpg?version=20250927005933",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 10,
+      "title": "GO",
+      "artist": "BLACKPINK",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41417/4141733.jpg?version=20260228015702",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 11,
+      "title": "타임캡슐",
+      "artist": "다비치",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41306/4130608.jpg?version=20251017094801",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 12,
+      "title": "그대 작은 나의 세상이 되어",
+      "artist": "카더가든",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/40271/4027190.jpg?version=20230112170034",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 13,
+      "title": "Blue Valentine",
+      "artist": "NMIXX",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41299/4129960.jpg?version=20251108012458",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 14,
+      "title": "뛰어(JUMP)",
+      "artist": "BLACKPINK",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41229/4122947.jpg?version=20250712005750",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 15,
+      "title": "OVERDRIVE",
+      "artist": "TWS (투어스)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41288/4128834.jpg?version=20251014031813",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 16,
+      "title": "어떻게 이별까지 사랑하겠어, 널 사랑하는 거지",
+      "artist": "AKMU(악뮤)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/202788/20278851.jpg?version=20210727012601",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 17,
+      "title": "달리 표현할 수 없어요",
+      "artist": "로이킴",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41316/4131664.jpg?version=20251029004137",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 18,
+      "title": "사랑은 봄비처럼... 이별은 겨울비처럼",
+      "artist": "임현정",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/306/30639.jpg?version=20230701040734",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 19,
+      "title": "모르시나요(PROD.로코베리)",
+      "artist": "조째즈",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41125/4112579.jpg?version=20250108003805",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 20,
+      "title": "NOT CUTE ANYMORE",
+      "artist": "아일릿(ILLIT)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41342/4134249.jpg?version=20260207013450",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 21,
+      "title": "toxic till the end",
+      "artist": "로제(ROSÉ)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41113/4111311.jpg?version=20250319100710",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 22,
+      "title": "멸종위기사랑",
+      "artist": "이찬혁",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41229/4122969.jpg?version=20250729020842",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 23,
+      "title": "like JENNIE",
+      "artist": "제니 (JENNIE)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41159/4115971.jpg?version=20250322025325",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 24,
+      "title": "Die With A Smile",
+      "artist": "Lady Gaga(레이디 가가)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/356136/35613643.jpg?version=20250701002559",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 25,
+      "title": "Whiplash",
+      "artist": "aespa",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41087/4108755.jpg?version=20241126004739",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 26,
+      "title": "Welcome to the Show",
+      "artist": "DAY6 (데이식스)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/206298/20629850.jpg?version=20250104012829",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 27,
+      "title": "청춘만화",
+      "artist": "이무진",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41081/4108180.jpg?version=20250318024429",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 28,
+      "title": "SPAGHETTI (feat. j-hope of BTS)",
+      "artist": "LE SSERAFIM (르세라핌)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41314/4131460.jpg?version=20260311021257",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 29,
+      "title": "Popcorn",
+      "artist": "도경수(D.O.)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/206405/20640582.jpg?version=20251115002408",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 30,
+      "title": "ONE MORE TIME",
+      "artist": "ALLDAY PROJECT",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41335/4133502.jpg?version=20260212011611",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 31,
+      "title": "TICK TOCK (Feat. ZICO) (Prod. by ZICO, Crush)",
+      "artist": "김하온(HAON)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41424/4142463.jpg?version=20260310022409",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 32,
+      "title": "너에게 닿기를",
+      "artist": "10CM",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41159/4115921.jpg?version=20250307105703",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 33,
+      "title": "FOCUS",
+      "artist": "Hearts2Hearts (하츠투하츠)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41289/4128980.jpg?version=20251022002830",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 34,
+      "title": "Never Ending Story",
+      "artist": "아이유(IU)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41204/4120415.jpg?version=20250529011654",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 35,
+      "title": "입춘",
+      "artist": "한로로",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/204552/20455290.jpg?version=20250601000543",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 36,
+      "title": "에피소드",
+      "artist": "이무진",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/40941/4094127.jpg?version=20250101001125",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 37,
+      "title": "그대만 있다면 (여름날 우리 X 너드커넥션 (Nerd Connection))",
+      "artist": "너드커넥션(Nerd Connection)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/40901/4090168.jpg?version=20240209005514",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 38,
+      "title": "첫 만남은 계획대로 되지 않아",
+      "artist": "TWS (투어스)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/40947/4094730.jpg?version=20250923013257",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 39,
+      "title": "I AM",
+      "artist": "IVE (아이브)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/40849/4084947.jpg?version=20240810012634",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 40,
+      "title": "시작의 아이 ❍",
+      "artist": "박다혜",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41248/4124853.jpg?version=20250812013338",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 41,
+      "title": "CINEMA",
+      "artist": "WOODZ",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41406/4140630.jpg?version=20260311032619",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 42,
+      "title": "예뻤어",
+      "artist": "DAY6 (데이식스)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/200804/20080494.jpg?version=20240805121438",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 43,
+      "title": "Champion",
+      "artist": "BLACKPINK",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41417/4141733.jpg?version=20260228015702",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 44,
+      "title": "THAT’S A NO NO",
+      "artist": "ITZY (있지)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/203110/20311029.jpg?version=20240805121541",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 45,
+      "title": "STYLE",
+      "artist": "Hearts2Hearts (하츠투하츠)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41214/4121497.jpg?version=20250619013108",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 46,
+      "title": "number one girl",
+      "artist": "로제(ROSÉ)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41106/4110641.jpg?version=20241123003542",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 47,
+      "title": "천상연",
+      "artist": "이창섭",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/40963/4096392.jpg?version=20240222064728",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 48,
+      "title": "빌려온 고양이 (Do the Dance)",
+      "artist": "아일릿(ILLIT)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41210/4121023.jpg?version=20251125051317",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 49,
+      "title": "APT.",
+      "artist": "로제(ROSÉ)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41086/4108664.jpg?version=20241206010201",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 50,
+      "title": "내게 사랑이 뭐냐고 물어본다면",
+      "artist": "로이킴",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/206771/20677117.jpg?version=20251125081353",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 51,
+      "title": "나는 반딧불",
+      "artist": "황가람",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41087/4108756.jpg?version=20241023010353",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 52,
+      "title": "한 페이지가 될 수 있게",
+      "artist": "DAY6 (데이식스)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/202657/20265759.jpg?version=20211119004415",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 53,
+      "title": "사랑인가 봐",
+      "artist": "멜로망스(MeloMance)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/40713/4071363.jpg?version=20220330120007",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 54,
+      "title": "Magnetic",
+      "artist": "아일릿(ILLIT)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/206323/20632324.jpg?version=20251125080152",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 55,
+      "title": "모든 날, 모든 순간 (Every day, Every Moment)",
+      "artist": "폴킴(Paul Kim)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/201547/20154722.jpg?version=20230601001519",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 56,
+      "title": "Congratulations",
+      "artist": "DAY6 (데이식스)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/5297/529710.jpg?version=20190719114948",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 57,
+      "title": "HAPPY",
+      "artist": "DAY6 (데이식스)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/206298/20629850.jpg?version=20250104012829",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 58,
+      "title": "FAMOUS",
+      "artist": "ALLDAY PROJECT",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41214/4121434.jpg?version=20260306032521",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 59,
+      "title": "Soda Pop",
+      "artist": "Saja Boys",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/381763/38176338.jpg?version=20250927005933",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 60,
+      "title": "하얀 그리움",
+      "artist": "프로미스나인",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/207742/20774246.jpg?version=20251203012355",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 61,
+      "title": "주저하는 연인들을 위해",
+      "artist": "잔나비",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/202371/20237198.jpg?version=20210421045158",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 62,
+      "title": "Ditto",
+      "artist": "NewJeans",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/40824/4082425.jpg?version=20231215003716",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 63,
+      "title": "Hype Boy",
+      "artist": "NewJeans",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/40780/4078016.jpg?version=20221014011218",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 64,
+      "title": "Love me or Leave me",
+      "artist": "DAY6 (데이식스)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/203237/20323788.jpg?version=20241114011724",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 65,
+      "title": "Maybe Tomorrow",
+      "artist": "DAY6 (데이식스)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/207241/20724195.jpg?version=20250508024718",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 66,
+      "title": "REBEL HEART",
+      "artist": "IVE (아이브)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41130/4113098.jpg?version=20250213010511",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 67,
+      "title": "Rich Man",
+      "artist": "aespa",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41272/4127287.jpg?version=20251023002442",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 68,
+      "title": "고민중독",
+      "artist": "QWER",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/40996/4099653.jpg?version=20240402065258",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 69,
+      "title": "I DO ME",
+      "artist": "KiiiKiii (키키)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41150/4115087.jpg?version=20250425011550",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 70,
+      "title": "HOME SWEET HOME (feat. 태양, 대성)",
+      "artist": "G-DRAGON",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41106/4110623.jpg?version=20241128002601",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 71,
+      "title": "소나기",
+      "artist": "이클립스 (ECLIPSE)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/206352/20635260.jpg?version=20251125080244",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 72,
+      "title": "Flower",
+      "artist": "오반(OVAN)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41160/4116029.jpg?version=20250315024908",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 73,
+      "title": "Pookie",
+      "artist": "FIFTY FIFTY",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/377971/37797179.jpg?version=20260207005525",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 74,
+      "title": "Your Idol",
+      "artist": "Saja Boys",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/381763/38176338.jpg?version=20250927005933",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 75,
+      "title": "시작의 아이",
+      "artist": "마크툽(MAKTUB)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41124/4112411.jpg?version=20250618004611",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 76,
+      "title": "Supernova",
+      "artist": "aespa",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41011/4101141.jpg?version=20241102010939",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 77,
+      "title": "내가 살아있다는 증거",
+      "artist": "TUNEXX (튜넥스)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41417/4141798.jpg?version=20260306013952",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 78,
+      "title": "내 이름 맑음",
+      "artist": "QWER",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41065/4106548.jpg?version=20250107004107",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 79,
+      "title": "XOXZ",
+      "artist": "IVE (아이브)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41260/4126044.jpg?version=20250828003754",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 80,
+      "title": "Zoo (From \"Zootopia 2\")",
+      "artist": "Disney",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/388975/38897538.jpg?version=20251220004005",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 81,
+      "title": "Mono (Feat. skaiwater)",
+      "artist": "i-dle (아이들)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41391/4139172.jpg?version=20260128020348",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 82,
+      "title": "ATTITUDE",
+      "artist": "IVE (아이브)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41130/4113098.jpg?version=20250213010511",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 83,
+      "title": "오늘만 I LOVE YOU",
+      "artist": "BOYNEXTDOOR",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41125/4112558.jpg?version=20250108011423",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 84,
+      "title": "Love wins all",
+      "artist": "아이유(IU)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/40955/4095501.jpg?version=20250326042636",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 85,
+      "title": "Dirty Work",
+      "artist": "aespa",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41210/4121085.jpg?version=20250628011258",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 86,
+      "title": "Mantra",
+      "artist": "제니 (JENNIE)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41083/4108354.jpg?version=20241017004618",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 87,
+      "title": "사랑의 언어 (Love Language)",
+      "artist": "김민석 (멜로망스)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41383/4138305.jpg?version=20260123002424",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 88,
+      "title": "body",
+      "artist": "다영 (DAYOUNG)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41275/4127586.jpg?version=20250923011626",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 89,
+      "title": "힙합보단 사랑, 사랑보단 돈 (Feat. 베이식)",
+      "artist": "노아주다(noahjooda)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/40723/4072374.jpg?version=20240223043339",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 90,
+      "title": "Love Me More",
+      "artist": "Apink (에이핑크)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41374/4137434.jpg?version=20260109013418",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 91,
+      "title": "눈물참기",
+      "artist": "QWER",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41210/4121045.jpg?version=20250611010118",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 92,
+      "title": "계절범죄",
+      "artist": "윤하(Younha/ユンナ)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41395/4139544.jpg?version=20260312005708",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 93,
+      "title": "싹 (Feat. 로꼬) (Prod. By GRAY)",
+      "artist": "OXYNOVA",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41424/4142463.jpg?version=20260310022409",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 94,
+      "title": "끝사랑",
+      "artist": "테이(Tei)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41404/4140492.jpg?version=20260214002234",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 95,
+      "title": "나는 아픈 건 딱 질색이니까",
+      "artist": "i-dle (아이들)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/40953/4095394.jpg?version=20250503021216",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 96,
+      "title": "다시 만난 오늘",
+      "artist": "TWS (투어스)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41403/4140399.jpg?version=20260226004231",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 97,
+      "title": "HANDS UP",
+      "artist": "MEOVV (미야오)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41184/4118481.jpg?version=20250514021619",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 98,
+      "title": "HOT",
+      "artist": "LE SSERAFIM (르세라핌)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41162/4116299.jpg?version=20251111013901",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 99,
+      "title": "TOO BAD (feat. Anderson .Paak)",
+      "artist": "G-DRAGON",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41156/4115621.jpg?version=20250910003408",
+      "collected_at": "2026-03-18 12:07:14"
+    },
+    {
+      "rank": 100,
+      "title": "캐치 캐치",
+      "artist": "YENA (최예나)",
+      "album_image": "https://image.bugsm.co.kr/album/images/50/41428/4142853.jpg?version=20260312011519",
+      "collected_at": "2026-03-18 12:07:14"
+    }
+  ]
+}

@@ -1,0 +1,573 @@
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 36px 20px 56px;
+}
+
+.page-header {
+  margin-bottom: 20px;
+}
+
+.page-title {
+  margin: 0 0 8px;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #111827;
+}
+
+.page-description {
+  margin: 0;
+  font-size: 15px;
+  color: #6b7280;
+}
+
+.tab-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.tab-button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  background-color: #e5e7eb;
+  color: #374151;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  transition:
+    transform 0.15s ease,
+    background-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.tab-button:hover {
+  transform: translateY(-1px);
+}
+
+/* 활성화 전 개별 탭 기본톤 */
+.tab-melon {
+  background-color: #eef8f1;
+  color: #1b7f43;
+}
+
+.tab-genie {
+  background-color: #eef4ff;
+  color: #2563eb;
+}
+
+.tab-bugs {
+  background-color: #fff4e8;
+  color: #ea580c;
+}
+
+/* 활성화 시 */
+.tab-melon.active {
+  background-color: #1db954;
+  color: #ffffff;
+  box-shadow: 0 6px 14px rgba(29, 185, 84, 0.22);
+}
+
+.tab-genie.active {
+  background-color: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 6px 14px rgba(37, 99, 235, 0.22);
+}
+
+.tab-bugs.active {
+  background-color: #f97316;
+  color: #ffffff;
+  box-shadow: 0 6px 14px rgba(249, 115, 22, 0.22);
+}
+
+.status-box {
+  margin-bottom: 20px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.status-box.loading {
+  background-color: #eef6ff;
+  color: #1565c0;
+}
+
+.status-box.error {
+  background-color: #ffe5e5;
+  color: #c62828;
+}
+
+.meta-card {
+  margin-bottom: 26px;
+  padding: 20px 18px;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+}
+
+.meta-card p {
+  margin: 0 0 10px;
+  font-size: 15px;
+  color: #111827;
+}
+
+.meta-card p:last-child {
+  margin-bottom: 0;
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+}
+
+/* 곡 한 줄을 작은 카드처럼 */
+.song-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px;
+  border: 1px solid #eceff3;
+  border-radius: 14px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.03);
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.song-item:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(15, 23, 42, 0.06);
+}
+
+.song-rank {
+  width: 34px;
+  flex-shrink: 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 800;
+  color: #374151;
+}
+
+.song-image {
+  width: 58px;
+  height: 58px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 10px;
+  background-color: #f3f4f6;
+  border: 1px solid #e5e7eb;
+}
+
+.song-info {
+  min-width: 0;
+}
+
+.song-title {
+  margin-bottom: 3px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #111827;
+  word-break: keep-all;
+}
+
+.song-artist {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #6b7280;
+  word-break: keep-all;
+}
+
+.section-title {
+  margin: 0 0 14px;
+  font-size: 22px;
+  font-weight: 800;
+  color: #111827;
+}
+
+.control-card {
+  margin-bottom: 24px;
+  padding: 18px;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+}
+
+.control-row {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  align-items: end;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 240px;
+  flex: 1;
+}
+
+.control-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #374151;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  background-color: #ffffff;
+  color: #111827;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.08);
+}
+
+.count-filter-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.count-button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  background-color: #eef2f7;
+  color: #374151;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  transition:
+    transform 0.15s ease,
+    background-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.count-button:hover {
+  transform: translateY(-1px);
+}
+
+.count-button.active {
+  background-color: #111827;
+  color: #ffffff;
+  box-shadow: 0 6px 14px rgba(17, 24, 39, 0.16);
+}
+
+.chart-section {
+  margin-bottom: 34px;
+}
+
+.chart-count {
+  font-size: 23px;
+  color: #6b7280;
+  font-weight: 700;
+}
+
+.compare-section {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.compare-search-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.compare-search-row .search-input {
+  flex: 1;
+  min-width: 240px;
+}
+
+.compare-search-button {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 12px;
+  background-color: #111827;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.compare-search-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(17, 24, 39, 0.16);
+}
+
+.compare-result-wrapper {
+  margin-top: 8px;
+}
+
+.compare-summary {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.compare-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.compare-card {
+  display: flex;
+  gap: 14px;
+  padding: 14px;
+  border: 1px solid #eceff3;
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.03);
+}
+
+.compare-image {
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 12px;
+  background-color: #f3f4f6;
+  border: 1px solid #e5e7eb;
+}
+
+.compare-info {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.compare-rank-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.compare-rank-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.melon-pill {
+  background-color: #eef8f1;
+  color: #1b7f43;
+}
+
+.genie-pill {
+  background-color: #eef4ff;
+  color: #2563eb;
+}
+
+.bugs-pill {
+  background-color: #fff4e8;
+  color: #ea580c;
+}
+
+.empty-box {
+  padding: 18px 16px;
+  border: 1px dashed #d1d5db;
+  border-radius: 14px;
+  background-color: #ffffff;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.song-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rank-change {
+  font-size: 12px;
+  font-weight: 600;
+  
+
+}
+
+.rank-change.up { color: #ef4444; }
+.rank-change.down { color: #3b82f6; }
+.rank-change.same { color: #9ca3af; }
+.rank-change.new { color: #22c55e; }
+
+/* 그래프 */
+
+.chart-summary {
+  margin: 24px 0 28px;
+}
+
+.artist-chart-card {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 16px 20px;
+  box-sizing: border-box;
+}
+
+.song-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 태블릿 이하 */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 28px 16px 40px;
+  }
+
+  .page-title {
+    font-size: 30px;
+  }
+
+  .chart-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .song-item {
+    gap: 12px;
+  }
+
+  .song-rank {
+    width: 30px;
+    font-size: 15px;
+  }
+
+  .song-image {
+    width: 54px;
+    height: 54px;
+  }
+
+  .song-title {
+    font-size: 14px;
+  }
+
+  .song-artist {
+    font-size: 12px;
+  }
+
+   .section-title {
+    font-size: 20px;
+  }
+
+  .control-card {
+    padding: 16px;
+  }
+
+  .compare-card {
+    padding: 12px;
+  }
+
+  .compare-image {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+/* 작은 모바일 */
+@media (max-width: 480px) {
+  .app-container {
+    padding: 22px 12px 32px;
+  }
+
+  .page-title {
+    font-size: 26px;
+  }
+
+  .page-description {
+    font-size: 14px;
+  }
+
+  .tab-group {
+    gap: 8px;
+  }
+
+  .tab-button {
+    padding: 9px 14px;
+    font-size: 13px;
+  }
+
+  .meta-card {
+    padding: 16px 14px;
+    border-radius: 14px;
+  }
+
+  .meta-card p {
+    font-size: 14px;
+  }
+
+  .song-item {
+    padding: 11px;
+  }
+
+  .song-rank {
+    width: 28px;
+    font-size: 14px;
+  }
+
+  .song-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .section-title {
+    font-size: 18px;
+  }
+
+  .control-card {
+    padding: 14px;
+    border-radius: 14px;
+  }
+
+  .search-input {
+    padding: 11px 12px;
+    font-size: 14px;
+  }
+
+  .compare-search-button {
+    width: 100%;
+  }
+
+  .compare-card {
+    gap: 12px;
+  }
+
+  .compare-image {
+    width: 58px;
+    height: 58px;
+  }
+
+  .compare-rank-pill {
+    font-size: 12px;
+  }
+}
