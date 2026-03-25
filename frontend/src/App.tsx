@@ -221,15 +221,21 @@ function ArtistChart({ data }: { data: ArtistChartItem[] }) {
       <ResponsiveContainer width="100%" height={180}>
         <BarChart
           data={data}
+          layout="vertical" // ⭐ 이거 추가
           barCategoryGap="37%" // 막대 간격 크게
           barGap={4} // 막대 사이 간격
           margin={{ top: 10, right: 20, left: 0, bottom: 10 }}
         >
-          {/* X축: 가수명 */}
-          <XAxis dataKey="name" interval={0} tick={{ fontSize: 11 }} />
+          {/* 숫자 축 */}
+          <XAxis type="number" tick={{ fontSize: 10 }} />
 
-          {/* Y축: 곡 수 */}
-          <YAxis allowDecimals={false} tick={{ fontSize: 10 }} />
+          {/* 가수 이름 축 */}
+          <YAxis
+            type="category"
+            dataKey="name"
+            width={80} // ⭐ 중요 (공간 확보)
+            tick={{ fontSize: 11 }}
+          />
 
           {/* 마우스를 올리면 상세값 표시 */}
           <Tooltip />
