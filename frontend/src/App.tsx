@@ -233,8 +233,11 @@ function ArtistChart({ data }: { data: ArtistChartItem[] }) {
           <YAxis
             type="category"
             dataKey="name"
-            width={150} // ⭐ 중요 (공간 확보)
+            width={120} // ⭐ 중요 (공간 확보)
             tick={{ fontSize: 11 }}
+            tickFormatter={(value) =>
+              value.length > 6 ? value.slice(0, 6) + "…" : value
+            }
           />
 
           {/* 마우스를 올리면 상세값 표시 */}
