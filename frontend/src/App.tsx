@@ -222,7 +222,7 @@ function ArtistChart({ data }: { data: ArtistChartItem[] }) {
         <BarChart
           data={data}
           layout="vertical" // ⭐ 이거 추가
-          barCategoryGap="37%" // 막대 간격 크게
+          barCategoryGap="30%" // 막대 간격 크게
           barGap={4} // 막대 사이 간격
           margin={{ top: 10, right: 20, left: 0, bottom: 10 }}
         >
@@ -233,7 +233,7 @@ function ArtistChart({ data }: { data: ArtistChartItem[] }) {
           <YAxis
             type="category"
             dataKey="name"
-            width={80} // ⭐ 중요 (공간 확보)
+            width={150} // ⭐ 중요 (공간 확보)
             tick={{ fontSize: 11 }}
           />
 
@@ -241,7 +241,7 @@ function ArtistChart({ data }: { data: ArtistChartItem[] }) {
           <Tooltip />
 
           {/* 막대 그래프 본체 */}
-          <Bar dataKey="value" radius={[8, 8, 0, 0]}>
+          <Bar dataKey="value" radius={[0, 8, 8, 0]}>
             {data.map((_, index) => (
               <Cell
                 key={`cell-${index}`}
